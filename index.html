@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#"><img class="logo" src="assets/images/logo.png" alt=""></a>
+      <a href="#" class="phoneNumber">1-800-300-3100</a>
+
+      <div id="requestCallback" class="requestCallback ">
+        <p id="requestP" class="regular">Request a callback</p>
+        <div id="callBackForm" class="callBackForm">
+          <form class="requestForm" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Name">
+            <input type="text" name="" value="" placeholder="Phone">
+            <input type="text" name="" value="" placeholder="Email">
+            <input type="text" name="" value="" placeholder="Subject"> <br>
+            <input class="regular callMeSubmit" type="submit" name="" value="Call me">
+          </form>
+        </div>
+      </div>
+
+      <div class="visitingTheLand">
+        <div class="logoIconBlueContainer">
+          <a href="#"><img class="logoIconBlue" src="assets/images/logoIcon.png" alt=""></a>
+          <div class="logoIconTextBox">
+            <p class="logoIconP">Official <br>
+            <span class="logoIconSpanOne">Birthright Israel</span> <br>
+            <span class="logoIconSpanTwo">provider</span></p>
+          </div>
+        </div>
+        <h4>Visiting the holy land?</h4>
+        <p>Our best value<br>
+          Sim cards</p>
+        <h2>Provide unlimited <br>
+          Connections</h2>
+      </div>
+      <div class="narrowWrapper">
+        <div class="container">
+          <img class="triangle" src="assets/images/triangle.png" alt="triangle anim">
+          <h1>Buy or rent an Israel SIM card <br>
+          before traveling to the holy land</h1>
+          <h2 class="greenHtwo">With our 5-star rated Sims, you get unlimited  <br>
+          calling and texting to the US and Canada</h2>
+
+          <img class="googleRank" src="assets/images/googleRank.png" alt="google rank 5/5">
+          <div class="planContainer">
+            <!-- plan1 -->
+            <div id="basicPlan" class="plan">
+              <div class="planNameBox">
+                <h3>Basic Plan</h3>
+                <div class="circlePrice">
+                  <p>$40</p>
+                </div>
+              </div>
+              <div class="planTextBox">
+                <p>10GB high speed data<br>
+                  Unlimited talk to US & <br>
+                  Canada <br>
+                  Unlimited text in Israel <br>
+                  Free home delivery <br>
+                  SIM card for keeps</p>
+                  <button class="planButton" type="button" name="button">Choose this plan</button>
+              </div>
+            </div>
+            <!-- plan2 -->
+            <div id="premiumPlan" class="plan">
+              <div class="planNameBox">
+                <h3>Premium Plan</h3>
+                <div class="circlePrice">
+                  <p>$45</p>
+                </div>
+              </div>
+              <div class="planTextBox">
+                <p>20GB high speed data<br>
+                  Unlimited US number <br>
+                  Unlimited talk in Israel <br>
+                  Unlimited talk to <br>
+                  US & Canada <br>
+                  Unlimited text to the US <br>
+                  Free homedelivery <br>
+                  SIM card for keeps</p>
+                  <button class="planButton" type="button" name="button">Choose this plan</button>
+              </div>
+            </div>
+            <!-- plan 3 -->
+            <div id="platinumPlan" class="plan">
+              <div class="planNameBox">
+                <h3>Platinum Plan</h3>
+                <div class="circlePrice">
+                  <p>$50</p>
+                </div>
+              </div>
+              <div class="planTextBox">
+                <p>60GB high speed data<br>
+                  Unlimited US number <br>
+                  Unlimited talk in Israel <br>
+                  Unlimited talk to <br>
+                  US & Canada <br>
+                  Unlimited text to the US <br>
+                  High Quality Adapter <br>
+                  Free homedelivery <br>
+                  SIM card for keeps</p>
+                  <button class="planButton" type="button" name="button">Choose this plan</button>
+              </div>
+            </div>
+          </div>
+          <!-- test plan content -->
+          <div class="planContentBox">
+
+            <div id="lockedCheckContainer" class="lockedCheckContainer">
+              <h2 class="bold great">Great!</h2>
+              <h4 class="regular choosingPlan">Thank you for choosing <span id="spanPalnID"></span> plan</h4>
+              <h3 class="regular">Is your phone unlocked?</h3>
+              <div class="labelBox">
+                <label class="lockedCheckLabel">
+                  <input id="checkedYesID" type="radio" name="lockCheck">
+                  <span class="checkmark"></span>
+                  <h4 class="regular">Yes</h4>
+                </label>
+                <label class="lockedCheckLabel">
+                  <input id="checkedNoID" type="radio" name="lockCheck">
+                  <span class="checkmark"></span>
+                  <h4 class="regular">No</h4>
+                </label>
+                <label class="lockedCheckLabel">
+                  <input id="checkedNotSureID" type="radio" name="lockCheck">
+                  <span class="checkmark"></span>
+                  <h4 class="regular">I'm not sure</h4>
+                </label>
+              </div>
+
+              <div id="selectSimSize" class="selectSimSize">
+                <h2 class="bold great">Select your sim card</h2>
+                <label id="simFullSizeContainer" class="lockedCheckLabel">
+                  <input id="simFullSize" type="radio" name="simCard">
+                  <span class="checkmark"></span>
+                  <h4 class="bold">Full size sim</h2>
+                </label>
+
+                <label class="lockedCheckLabel">
+                  <input id="simMicro" type="radio" name="simCard">
+                  <span class="checkmark"></span>
+                  <h4 class="bold">Micro sim</h2>
+                </label>
+
+                <h5 class="light">(good for Micro- good for iPhone 4 and Galaxy S3 S4 S5)</h5>
+                <label class="lockedCheckLabel">
+                  <input id="nanoSim" type="radio" name="simCard">
+                  <span class="checkmark"></span>
+                  <h4 class="bold">Nano sim</h2>
+                </label>
+
+                <h5 class="light">(good for Micro- good for iPhone 4 and Galaxy S3 S4 S5)</h5>
+                <div class="ifYouAreUnsure">
+                  <h3 class="bold">If you are not sure what sim you will need <br>
+                  please search for your phone model <a href="#">here</a> </h3>
+                </div>
+              </div>
+
+              <div id="selectedNo" class="selectedNo">
+                <h4 class="regular">unfortunately a sim wonʼt work in your phone until itʼs unlocked,
+                    feel free to rent a device from <br>
+                    <a href="#">here</a> <br>
+                    You may use coupon code <b>BR10</b> for an exclusive <b>Birthright</b> discount</h4>
+              </div>
+
+              <div id="notSure" class="selectedNo">
+                <h4 class="regular">Please call your carrier to find out <br>
+                if phone is unlocked </h4>
+                <h5 class="light">(Most Version 4G phones come unlocked)</h5>
+              </div>
+
+              <!-- date arivals inside-->
+              <div class="dateArivals" id="dateArivals">
+                <h3 id="enterYourTravelDate" class="regular">Now enter your travel dates</h3>
+                <div class="datesRow">
+                  <div class="datesCalendarContainer arr">
+                    <input class="dateArivalsDateInput" placeholder="Arrival" class="form-control" type="text"  onfocus="(this.type='date'),this.style.fontSize='0.9vw'" id="dateArrival">
+                    <img src="assets/images/date.svg" alt="">
+                  </div>
+                  <div class="datesCalendarContainer">
+                    <img src="assets/images/date.svg" alt="">
+                    <input class="dateArivalsDateInput" placeholder="Departure" class="form-control" type="text"  onfocus="(this.type='date'),this.style.fontSize='0.9vw'" id="dateDeparture">
+                  </div>
+                </div>
+                <input class="dateArivalsTripID" placeholder="Enter your trip ID" type="text" name="" value="">
+                <h2 class="regular">Your sim will be activated for <br> 12 days.</h2>
+                <h2 class="regular">Please choose a shipping method</h2>
+
+                <h3 class="bold">FREE shipping</h3>
+                <h5 class="regular">Only applies if you purchase the sim<br>
+                 at least 10 days prior to your trip</h5>
+
+                 <h3 class="bold">Standard shipping($7.50)</h3>
+                 <h5 class="regular">This applies if you purchase the sim<br>
+                  3-9 days prior to your trip</h5>
+                 <h3 class="bold">Express shipping ($20.00)</h3>
+                 <h5 class="regular">This applies if you purchase the sim<br>
+                   2-3 days prior to your trip</h5>
+
+                  <h3 class="bold">We can also deliver your sim to <br>
+                      your bus in israel for FREE</h3>
+
+                  <button class="proceedToCheckOut" type="button" name="button">proceed to checkout</button>
+              </div>
+              <!-- date arivals inside-->
+
+            </div>
+
+
+
+          </div>
+          <!-- test plan content end-->
+
+        </div>
+      </div>
+
+      <div class="simCardContainer">
+        <span id="MoreDevices"><a href="#">More Devices</a> </span>
+        <img class="simCard" src="assets/images/simCard.png" alt="Sim card">
+        <p>SIM Card Rental $5/day <br>
+        Sim card Sale:call</p>
+        <div class="sfIcons">
+          <div class="sfIconsInsideBox">
+            <picture>
+              <img class="icon" src="assets/images/phoneIcon.jpg" alt="">
+            </picture>
+            <h6>US NUMBER</h6>
+            <p>Option to use your <br>
+              American phone <br>
+              number in israel</p>
+          </div>
+
+          <div class="sfIconsInsideBox">
+            <picture>
+              <img class="icon" src="assets/images/stelaricon.jpg" alt="">
+            </picture>
+            <h6>ULTRA-FAST DATA</h6>
+            <p>Capitalize on israel's <br>
+              most reliable 4G <br>
+              network</p>
+          </div>
+
+          <div class="sfIconsInsideBox">
+            <picture>
+              <img class="icon" src="assets/images/handicon.jpg" alt="">
+            </picture>
+            <h6>AFFORDABLE</h6>
+            <p>Transparent and  <br>
+              reasonable pricing <br>
+              structure</p>
+          </div>
+
+          <div class="sfIconsInsideBox">
+            <picture>
+              <img class="icon" src="assets/images/consultingicon.jpg" alt="">
+            </picture>
+            <h6>24/7 <br>
+            SUPPORT</h6>
+            <p>Round the clock  <br>
+              customer service <br>
+              offices in the U.S and <br>
+              israel</p>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <footer>
+      <a href="#"><img class="logoFooter" src="assets/images/logo.png" alt=""></a>
+      <a href="#" class="phoneNumberFooter">1-800-300-3100</a>
+      <div class="israelLink">
+        <a href="#">2019 Unlimited Israel.com</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js" charset="utf-8"></script>
+  </body>
+</html>

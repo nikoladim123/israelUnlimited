@@ -1,0 +1,863 @@
+@font-face {
+  font-family: "RobotoSlab-Light";
+  font-display: auto;
+  src: url("../fonts/RobotoSlab-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  font-display: auto;
+  src: url("../fonts/RobotoSlab-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  font-display: auto;
+  src: url("../fonts/RobotoSlab-Bold.ttf") format('truetype');
+}
+
+.light{
+  font-family: "RobotoSlab-Light";
+  font-weight: 100;
+}
+.regular{
+  font-family: "RobotoSlab-Regular";
+  font-weight: 400;
+}
+.bold{
+  font-weight: 800;
+  font-family: "RobotoSlab-Bold";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+header{
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(95,104,211);
+  /* height: 351vw; */
+}
+
+.logo {
+  width: 23.0332vw;
+  height: 3.6367vw;
+  margin-top: 1.929vw;
+  margin-left: 6.298vw;
+}
+
+.phoneNumber{
+  z-index: 1;
+  font-family: "RobotoSlab-Bold",serif;
+  display: inline-block;
+  color:rgb(6,215,156);
+  font-size: 2.343vw;
+  text-decoration: none;
+  position: absolute;
+  right: 5.371vw;
+  top:1.246vw;
+}
+
+.requestCallback {
+  transition: 1s;
+  text-align: center;
+  border-radius: 5vw;
+  z-index: 3;
+  position: absolute;
+  top: 5vw;
+  width: 15vw;
+  right: 5.8vw;
+  background-color: rgb(220,220,220,0.81);
+  color: rgb(95,104,211);
+  height: 3vw;
+  overflow: hidden;
+}
+
+.requestCallback:hover{
+  filter: brightness(110%);
+}
+
+.requestCallback p:hover{
+  cursor: pointer;
+}
+
+.requestCallback p{
+  transition: 1s;
+  font-size: 1.2vw;
+  padding: 0.7vw;
+  margin: 0;
+}
+.requestCallback input {
+    border: none;
+    background-color: rgb(221,221,221);
+    width: 75%;
+    padding-left: 5%;
+    height: 3vw;
+    margin: 0.5vw;
+    border-radius: 5vw;
+    font-size: 1.4vw;
+}
+
+.requestCallback ::placeholder {
+  /* padding-left: 0; */
+}
+
+
+.requestCallbackClicked {
+  background-color: rgb(95,104,211);
+  right: 2.8vw;
+  border-radius: 0;
+  width: 23vw;
+  height: 29vw;
+  box-shadow: 0px 0px 7.714vw 6.1vw rgba(0,0,0,0.08);
+}
+.requestCallbackClicked p {
+    font-size: 1.8vw;
+    background-color: rgb(6,215,156);
+    margin: 0;
+    margin-bottom: 0.5vw;
+    padding-top: 1vw;
+    color: white;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid white;
+}
+
+.callMeSubmit{
+  margin-top: 2vw !important;
+  width: 54% !important;
+}
+.callMeSubmit:hover{
+  cursor: pointer;
+}
+
+
+
+.visitingTheLand{
+  background-color: rgb(6,215,156);
+  position: absolute;
+  left: 5.0781vw;
+  top: 10.449vw;
+  width: 100%;
+  height: 70vw;
+  color: white;
+  padding-left: 1.75vw;
+}
+
+.logoIconBlueContainer{
+  position: absolute;
+  /* border: 1px solid red; */
+  display: flex;
+  top: -3vw;
+  background-color: rgb(255,255,255,0.3);
+  border-radius:2vw;
+  padding: 0.5vw;
+}
+
+.logoIconBlue{
+  width: 6.884vw;
+  height: 4.248vw;
+}
+
+.logoIconP{
+  font-size: 1.756vw !important;
+  margin-top: 0.5vw !important;
+  font-family: "RobotoSlab-Light",serif;
+}
+
+.logoIconSpanOne{
+  font-family: "RobotoSlab-Bold",serif;
+}
+
+.logoIconSpanTwo{
+  float: right;
+  margin-right: 0.5vw;
+}
+
+.visitingTheLand h4{
+  margin: 0;
+  margin-top: 9.5vw;
+  font-family: "RobotoSlab-Light",serif;
+  font-size: 3.222vw;
+  font-weight: 100;
+}
+
+.visitingTheLand p{
+  margin: 0;
+  margin-top: 3vw;
+  font-family: "RobotoSlab-regular",serif;
+  font-size: 1.757vw;
+}
+
+.visitingTheLand h2{
+  margin: 0;
+  margin-top: 0.8vw;
+  font-family: "RobotoSlab-Bold",serif;
+  font-size: 2.929vw;
+}
+
+.simCardContainer{
+  position: absolute;
+  background-color: white;
+  right: 0;
+  width: 53.466vw;
+  height: 44.97vw;
+  z-index: 2;
+  top: 6vw;
+  /* box-shadow: 0px 0px 2.929vw 0px rgba(0,0,0,0.07); */
+  box-shadow: 0px 0px 7.714vw 6.1vw rgba(0,0,0,0.06);
+  perspective: 40vw;
+  font-family: "RobotoSlab-regular",serif;
+  font-size: 1.171vw;
+}
+
+#MoreDevices {
+  z-index: 2;
+  transition: 1s;
+  opacity: 0;
+  position: absolute;
+  padding-bottom: 3vw;
+  top: -4vw;
+  left: 13vw;
+  color: white;
+  font-size: 1.3vw;
+  font-family: "RobotoSlab-light",serif;
+}
+#MoreDevices a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.simCard{
+  transition: 1.5s;
+  position: absolute;
+  left: 3.279vw;
+  /* top: -5.904vw; */
+  top: -37.904vw;
+  opacity: 0;
+  width: 38.916vw;
+  height: 33.98vw;
+  transform: rotate(-45deg);
+  /* animation-name: simcard; */
+  /* animation-duration: 3s; */
+}
+
+
+/* @keyframes simcard {
+  0%{
+    opacity: 0;
+    transform: rotateY(0deg);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+} */
+
+.simCardContainer>p{
+  position: absolute;
+  right: 4.638vw;
+  top: 18.652vw;
+}
+
+.sfIcons{
+  color: rgb(37,37,37);
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 26vw;
+  left: 7.5vw;
+  width: 39.3vw;
+  min-height: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.sfIconsInsideBox{
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon{
+  width: 4.492vw;
+  height: 4.492vw;
+}
+.icon:hover{
+  cursor: pointer;
+}
+
+.sfIconsInsideBox h6{
+  font-size: 0.881vw;
+  margin: 0;
+}
+.sfIconsInsideBox p{
+  font-size: 0.72vw;
+  font-family: "RobotoSlab-Regular",serif;
+}
+
+/* content */
+.narrowWrapper{
+  overflow: hidden;
+  position: relative;
+  transform: skew(0deg, -24deg);
+  background: white;
+  width: 100%;
+  height: auto;
+  top: 24.5vw;
+}
+
+.container{
+  transform: skew(0deg, 24deg);
+  background: white;
+  position: relative;
+  width: 88.476vw;
+  /* min-height:134vw; */
+  left: 5.078vw;
+  box-shadow: 0px 0px 7.714vw 6.1vw rgba(0,0,0,0.07);
+  margin-bottom: 34vw;
+
+  /* border: 1px solid red; */
+}
+
+.triangle{
+  position: relative;
+  left: 30vw;
+  top: 12vw;
+  width: 8.544vw;
+  height: 7.568vw;
+  animation-name: triangle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes triangle {
+  0%{
+    top: 12vw;
+  }
+  100%{
+    top: 15vw;
+  }
+}
+
+.container h1{
+  position: relative;
+  font-size: 3.662vw;
+  font-family: "RobotoSlab-Regular",serif;
+  margin-top:24vw;
+  text-align: center;
+}
+
+.greenHtwo{
+  font-family: "RobotoSlab-Light",serif;
+  font-weight: 100;
+  position: relative;
+  text-align: center;
+  font-size: 2.343vw;
+  color: rgb(6,215,156);
+  margin-top: 2vw;
+}
+
+.googleRank{
+  position: relative;
+  width: 13.183vw;
+  height: 6.982vw;
+  margin-left: 50%;
+  left: -7.5vw;
+}
+
+.planContainer{
+  position: relative;
+  margin-top: 1.22vw;
+  margin-left: 50%;
+  left: -34.75vw;
+  width: 69.677vw;
+  height: 48.73vw;
+  /* border: 1px solid green; */
+  margin-bottom: 10vw;
+  display: flex;
+  background-color: rgb(91,100,202);
+}
+
+.plan{
+  transition: 0.4s;
+  width: 23.22vw;
+  position: relative;
+  /* border: 1px solid red; */
+  background-color: rgb(91,100,202);
+  border-top-left-radius:  0.5vw;
+  border-top-right-radius:  0.5vw;
+  border: 1px solid rgb(91,100,202);
+}
+.plan:hover{
+  cursor: pointer;
+  z-index: 2 !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0px 0px 2.832vw 0px rgba(0,0,0,0.5);
+  border: 4px solid rgb(91,100,202);
+}
+
+.planNameBox{
+  padding-top: 0.1px;
+  position: relative;
+  height: 17%;
+  width: 100%;
+  background-color: rgb(91,100,202);
+}
+
+.planNameBox h3{
+  color: white;
+  font-family: "RobotoSlab-Bold",serif;
+  text-align: center;
+  font-size: 2.148vw;
+}
+
+.circlePrice{
+  position: relative;
+  width: 5.273vw;
+  height: 5.273vw;
+  border-radius: 50%;
+  background-color: rgb(6,215,156);
+  margin-left: 50%;
+  left: -2.635vw;
+  border: 0.244vw solid rgb(205,206,211);
+  top: -1.4vw;
+}
+
+.circlePrice{
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "RobotoSlab-Bold",serif;
+  font-size: 1.953vw;
+  box-shadow: 0px 0px 2.832vw 0px rgba(0,0,0,0.07);
+}
+
+.planTextBox{
+  background-color: rgb(226,227,230);
+  flex-direction:  column;
+  position: relative;
+  width: 100%;
+  height:83%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid yellow; */
+}
+
+.planTextBox p{
+  font-family: "RobotoSlab-Regular",serif;
+  font-size: 1.367vw;
+  text-align: center;
+  line-height: 2;
+  margin-top: -4vw;
+}
+
+.planButton{
+  width: 16.69vw;
+  height: 4vw;
+  border-radius: 5vw;
+  border: 5px solid white;
+  background-color: rgb(6,215,156);
+  position: absolute;
+  bottom:  4vw;
+  color: white;
+  font-size: 1.464vw;
+  font-family: "RobotoSlab-Bold",serif;
+}
+
+/* plan  content */
+/* plan  content */
+/* plan  content */
+
+/* planContentBox test*/
+/* planContentBox test*/
+/* planContentBox test*/
+.planContentBox{
+  /* border: 1px solid blue; */
+  position: relative;
+  margin-top: 2vw;
+  margin-left: 50%;
+  left: -34.75vw;
+  width: 69.677vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lockedCheckContainer{
+  transition: 3s;
+  overflow: hidden;
+  max-height: 0vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.great{
+  margin-bottom: 0;
+}
+
+.choosingPlan{
+  margin: 0;
+}
+
+.lockedCheckContainer input:checked ~
+
+.lockedCheckContainer label h4{
+  display: inline;
+}
+
+.lockedCheckLabel{
+  position: relative;
+  display: block;
+  padding: 0.1px;
+  /* background: red; */
+  margin: 1vw;
+}
+.lockedCheckLabel:hover{
+  cursor: pointer;
+}
+.lockedCheckLabel h4{
+  margin: 0;
+  margin-left: 2vw;
+  margin-right: 1vw;
+}
+
+/* simsize */
+.selectSimSize{
+  transition: 1s;
+  max-height: 0vw;
+  overflow: hidden;
+  /* height: 24vw */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.selectSimSize h5{
+  margin: 0;
+  margin-bottom: 1vw;
+  margin-top: -0.2vw;
+}
+
+.ifYouAreUnsure{
+  background-color: rgb(239,239,239);
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+/* selectNO */
+.selectedNo{
+  transition: 1s;
+  height: 0;
+  overflow: hidden;
+  /* height: 16vw; */
+  text-align: justify;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: 29.282vw;
+  background-color: rgb(255,213,108);
+  box-shadow: 0px 0px 9.714vw 0.1vw rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Create a custom checkbox */
+/* checkbox css */
+.lockedCheckContainer label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Hide the browser's default checkbox */
+.lockedCheckLabel input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  border-radius: 50%;
+  position: absolute;
+  top: 0.4vw;
+  left: 0;
+  height: 1.22vw;
+  width: 1.22vw;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.lockedCheckLabel:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.lockedCheckLabel input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.lockedCheckLabel input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.lockedCheckLabel .checkmark:after {
+  left: 0.439vw;
+  top: 0.244vw;
+  width: 0.244vw;
+  height: 0.488vw;
+  border: solid white;
+  border-width: 0 0.1464vw 0.1464vw 0;
+  transform: rotate(45deg);
+}
+
+#simFullSizeContainer{
+  left: 0.85vw;
+}
+/* custom checkbox end */
+
+
+/* dates */
+
+#dateArivals{
+  overflow: hidden;
+  transition: 1s;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  margin-top: 2vw;
+  max-height: 0vw;
+  text-align: center;
+}
+
+#dateArivals h3,#dateArivals h5{
+  margin: 0;
+  margin-top: 1vw;
+}
+
+#dateArivals h5{
+  margin: 0;
+  margin-bottom: 2vw;
+}
+
+#enterYourTravelDate{
+  margin-bottom: 2vw !important;
+}
+
+.datesRow {
+  margin-bottom: 1.5vw;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dateArivalsDateInput{
+  width: 10vw;
+  height: 2.78vw;
+  border: 4px solid black;
+  font-size: 1.2vw;
+}
+
+::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 2vw;
+  background: red;
+  height: 100%;
+}
+
+.dateArivals input{
+  position: relative;
+  background: transparent;
+  position: relative;
+  padding-left: 0.5vw;
+  font-size: 1.2vw;
+  z-index: 1;
+}
+
+.dateArivalsTripID{
+  width: 12.68vw;
+  height: 3.41vw;
+  border: 1px solid black
+}
+
+.datesCalendarContainer{
+  position: relative;
+}
+.datesCalendarContainer.arr{
+  /* margin-right: 2.68vw; */
+}
+
+.datesCalendarContainer img{
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  right: 1vw;
+  top: 0.7vw;
+}
+
+.proceedToCheckOut{
+  color: white;
+  background-color: rgb(6,215,156);
+  font-size: 1.756vw;
+  border: none;
+  font-family: "RobotoSlab-Bold",serif;
+  width: 34.574vw;
+  height: 4.636vw;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
+/* dates end */
+
+
+
+
+
+
+
+
+
+
+
+.planContentBox h2{
+  font-size: 2.8vw;
+  /* 60 */
+}
+
+.planContentBox h3{
+  font-size: 2.147vw;
+  /* 44 */
+}
+
+.planContentBox h4{
+  font-size: 1.464vw;
+  /* 30 */
+}
+
+.planContentBox h5{
+  font-size: 1.1713vw;
+  /* 24 */
+}
+
+
+
+
+
+
+
+
+
+/* .planForm input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.planForm:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+  position: relative;
+  width: 100%;
+  height: 21.777vw;
+  background-color: rgb(91,100,202);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.logoFooter{
+  width: 34.0332vw;
+  height: 2.6367vw;
+  margin-top: 3.9vw;
+}
+
+.phoneNumberFooter{
+  font-family: "RobotoSlab-Bold",serif;
+  color:rgb(6,215,156);
+  font-size: 2.343vw;
+  text-decoration: none;
+}
+
+.israelLink{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.394vw;
+  background-color: rgb(6,215,156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.israelLink a{
+  color: white;
+  text-decoration: none;
+  font-family: "RobotoSlab-Regular",serif;
+  font-size: 1.171vw;
+}
+
+.shippingMethodDiv label{
+  display: flex;
+  justify-content:  flex-start;
+  align-items: center;
+}
