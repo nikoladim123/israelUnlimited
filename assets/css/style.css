@@ -219,6 +219,7 @@ header{
 }
 
 #MoreDevices {
+  text-align: center;
   z-index: 2;
   transition: 1s;
   opacity: 0;
@@ -233,6 +234,11 @@ header{
 #MoreDevices a{
   color: white;
   text-decoration: none;
+}
+#MoreDevices a span{
+  color: white;
+  text-decoration: none;
+  font-size: 1.1vw;
 }
 
 
