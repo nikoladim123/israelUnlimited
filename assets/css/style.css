@@ -481,6 +481,8 @@ header{
 .checkMarkPlan{
   position: relative;
   top: 0.3vw;
+  width: 1.8vw;
+  height: 1.5vw;
 }
 
 .planButton{
