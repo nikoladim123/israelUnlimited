@@ -389,7 +389,7 @@ header{
   margin-left: 50%;
   left: -34.75vw;
   width: 69.677vw;
-  height: 48.73vw;
+  height: 52.73vw;
   /* border: 1px solid green; */
   margin-bottom: 10vw;
   display: flex;
@@ -470,6 +470,15 @@ header{
   text-align: center;
   line-height: 2;
   margin-top: -4vw;
+}
+
+.planTextBox span{
+  color: rgb(6,215,156);
+}
+
+.checkMarkPlan{
+  position: relative;
+  top: 0.4vw;
 }
 
 .planButton{
