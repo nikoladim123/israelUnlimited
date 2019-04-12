@@ -47,6 +47,151 @@ header{
   background-color: rgb(95,104,211);
   /* height: 351vw; */
 }
+/* nav start */
+nav{
+  position: relative;
+  background-color: rgb(95,104,211);
+  /* border: 1px solid red; */
+  height: 5.939vw;
+  display: flex;
+}
+
+.navLinks{
+  /* border: 1px solid black; */
+  display: flex;
+}
+.navLinksAnchor{
+  transition: 0.3s;
+  background-color: rgb(99,109,219);
+  text-decoration: none;
+  height: 100%;
+  border-left: 1px solid rgb(30,115,190);
+  display: flex;
+  padding: 0 1vw;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3vw;
+  font-family: "RobotoSlab-regular",serif;
+  white-space: nowrap;
+}
+
+.navLinksAnchor:hover{
+  background-color: white;
+  color:rgb(99,109,219);
+}
+
+.logoNav {
+  width: 22.86vw;
+  height: 1.63vw;
+  margin-top: 2.2vw;
+  margin-left: 1.8558vw;
+  margin-right: 6.6vw;
+}
+
+.rightNavContent{
+  width: 100%;
+  /* background: orange; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rightNavContent a{
+  /* font-family: "RobotoSlab-regular",serif; */
+  font-size: 1.5vw;
+  color: white;
+  text-decoration: none;
+}
+
+nav .fa, .fas{
+  color: white;
+  font-size: 1.7vw;
+}
+
+.ProductsSrvicesMegaMenu{
+  overflow: hidden;
+  transition: 0.5s;
+  border-top: 1px solid white;
+  width: 100%;
+  position: absolute;
+  /* height: 54.194vw; */
+  height: 0;
+  z-index: 4;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(144,212,159,1) 0%, rgba(247,247,247,1) 30%, rgba(247,247,247,1) 100%);
+}
+.ProductsSrvicesMegaMenu h2{
+  font-size: 3.56vw;
+  margin: 1vw;
+}
+.ProductsSrvicesMegaMenu p{
+  font-size: 1.336vw;
+  font-size: 1.15vw;
+}
+.megaMenuRanking{
+  width: 7.0527vw;
+  height: 7.0527vw;
+  position: relative;
+  top: 2vw;
+  margin-top: -1vw;
+}
+
+.MMproductsContainer{
+  /* border: 1px solid red; */
+  width: 100%;
+  min-height: 32.665vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -3vw;
+}
+
+.MMproductBox{
+  height: 32.665vw;;
+  width: 12.5%;
+}
+
+.product{
+  width: 100%;
+  height: 65%;
+  display: flex;
+  align-items: flex-end;
+}
+.product img{
+  width: 100%;
+  transition: 0.15s;
+  filter: blur(0vw);
+}
+.nameCart{
+  padding-top: 0.1px;
+  height: 35%;
+  position: relative;
+}
+.MMcardButton {
+  display: flex;
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+  width: 100%;
+  border: 2px solid rgb(5,193,140);
+  height: 3.71vw;
+  align-items: center;
+  justify-content: space-around;
+}
+.MMcardButton:hover{
+  cursor: pointer;
+}
+
+.MMcardButton .fa, .MMcardButton .fas{
+  color: rgb(5,193,140);
+  font-size: 1.5vw;
+}
+
+/* nav end */
 
 .logo {
   width: 34.0332vw;

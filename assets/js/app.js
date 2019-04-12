@@ -43,6 +43,77 @@ var spanPalnID = document.getElementById('spanPalnID');
   // MoreDevices
 var simCardContainer = document.getElementsByClassName('simCardContainer')[0];
 var MoreDevices = document.getElementById('MoreDevices');
+  // mega menu
+var prodMegaBox = document.getElementsByClassName('prodMegaBox')[0];
+var ProductsSrvicesMegaMenu = document.getElementsByClassName('ProductsSrvicesMegaMenu')[0];
+var prodOne = document.getElementById('prodOne');
+var prodTwo = document.getElementById('prodTwo');
+var prodThree = document.getElementById('prodThree');
+var prodFour = document.getElementById('prodFour');
+  //nav link anchors
+var navLinksAnchor = document.getElementsByClassName('navLinksAnchor');
+// link hover white
+// link hover white
+// link hover white
+
+prodMegaBox.addEventListener('mouseenter',()=>{
+  navLinksAnchor[0].style.backgroundColor = "white";
+  navLinksAnchor[0].style.color = "rgb(99,109,219)";
+});
+
+prodMegaBox.addEventListener('mouseleave',()=>{
+  navLinksAnchor[0].style.backgroundColor = "rgb(99,109,219)";
+  navLinksAnchor[0].style.color = "white";
+});
+
+// MegaMenu
+// MegaMenu
+// MegaMenu
+prodMegaBox.addEventListener('mouseenter',()=>{
+	ProductsSrvicesMegaMenu.style.height = '54.194vw';
+});
+
+prodMegaBox.addEventListener('mouseleave',()=>{
+	ProductsSrvicesMegaMenu.style.height = '0vw';
+});
+
+  // MM product hover change image functions
+function prodFunHoverON(targetID,source) {
+  targetID.addEventListener('mouseenter',(e)=>{
+    e.target.style.opacity = '0';
+    e.target.style.filter = 'blur(0.5vw)';
+    setTimeout(function () {
+      e.target.src = source;
+      e.target.style.opacity = '1';
+      e.target.style.filter = 'blur(0vw)';
+    }, 150);
+  });
+}
+
+function prodFunHoverOff(targetID,source) {
+  targetID.addEventListener('mouseleave',(e)=>{
+    e.target.style.opacity = '0';
+    e.target.style.filter = 'blur(0.5vw)';
+    setTimeout(function () {
+      e.target.src = source;
+      e.target.style.opacity = '1';
+      e.target.style.filter = 'blur(0vw)';
+    }, 150);
+  });
+}
+  // prodOne
+prodFunHoverON(prodOne,'assets/images/prodOneHover.png');
+prodFunHoverOff(prodOne,'assets/images/prodOne.png');
+  // prodTwo
+prodFunHoverON(prodTwo,'assets/images/prodTwoHover.png');
+prodFunHoverOff(prodTwo,'assets/images/prodTwo.png');
+  // prodThree
+prodFunHoverON(prodThree,'assets/images/prodThreeHover.png');
+prodFunHoverOff(prodThree,'assets/images/prodThree.png');
+  // prodFour
+prodFunHoverON(prodFour,'assets/images/prodFourHover.png');
+prodFunHoverOff(prodFour,'assets/images/prodFour.png');
+
 
 
 // more devices Hover Effect
